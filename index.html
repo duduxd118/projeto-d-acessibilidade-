@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copa do Mundo 2002</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copa do Mundo de 2002</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Copa do Mundo de 2002</h1>
-        <p>Acompanhe os momentos históricos da Copa realizada no Japão e na Coreia do Sul.</p>
-    </header>
-
+  <header>
+    <h1>Copa do Mundo de 2002</h1>
     <nav>
-        <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#teams">Times Famosos</a></li>
-            <li><a href="#final">Final</a></li>
-        </ul>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#times-famosos">Times Famosos</a></li>
+        <li><a href="#final">Final</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <section class="about" id="about">
-        <h2>Sobre a Copa de 2002</h2>
-        <p>A Copa do Mundo de 2002 foi a primeira a ser realizada em dois países: Japão e Coreia do Sul. A seleção brasileira conquistou seu quinto título mundial, com uma vitória incontestável sobre a Alemanha na final, com dois gols de Ronaldo Fenômeno. Foi também a Copa onde a Seleção Brasileira se destacou pela força ofensiva e pelo trabalho coletivo.</p>
-        <button aria-label="Leia mais sobre a Copa de 2002" class="read-more-btn" onclick="toggleMoreInfo('about')">Leia mais</button>
-        <div id="about-more" style="display:none;">
-            <p>Essa edição também foi marcada por surpresas, como a eliminação precoce de algumas seleções favoritas e a histórica campanha da Turquia.</p>
-        </div>
+  <main>
+    <section id="sobre">
+      <h2>Sobre a Copa de 2002</h2>
+      <p>A Copa do Mundo de 2002 foi a primeira a ser realizada em dois países: Japão e Coreia do Sul. A seleção brasileira conquistou seu quinto título mundial, com uma vitória incontestável sobre a Alemanha na final, com dois gols de Ronaldo Fenômeno. Foi também a Copa onde a Seleção Brasileira se destacou pela força ofensiva e pelo trabalho coletivo.</p>
     </section>
 
-    <section class="teams" id="teams">
-        <h2>Times Famosos</h2>
-        <ul>
-            <li><strong>Brasil:</strong> Campeão com Ronaldo, Rivaldo, Ronaldinho Gaúcho e Rivaldo.</li>
-            <li><strong>Alemanha:</strong> Vice-campeã, com grandes nomes como Oliver Kahn e Michael Ballack.</li>
-            <li><strong>Turquia:</strong> Surpreendeu chegando até a semifinal e garantindo o terceiro lugar.</li>
-        </ul>
-        <button aria-label="Ver os times mais famosos" class="read-more-btn" onclick="toggleMoreInfo('teams')">Ver mais</button>
-        <div id="teams-more" style="display:none;">
-            <p>Outros times também fizeram história, como a Coreia do Sul, que teve uma performance impressionante no torneio.</p>
-        </div>
+    <section id="times-famosos">
+      <h2>Times Famosos</h2>
+      <ul>
+        <li><strong>Brasil:</strong> Campeão com Ronaldo, Rivaldo, Ronaldinho Gaúcho e Rivaldo.</li>
+        <li><strong>Alemanha:</strong> Vice-campeã, com grandes nomes como Oliver Kahn e Michael Ballack.</li>
+        <li><strong>Turquia:</strong> Surpreendeu chegando até a semifinal e garantindo o terceiro lugar.</li>
+      </ul>
     </section>
 
-    <section class="final" id="final">
-        <h2>Final: Brasil vs. Alemanha</h2>
-        <p>A final entre Brasil e Alemanha foi um dos grandes confrontos da história das Copas. O Brasil venceu por 2 a 0, com os dois gols sendo marcados por Ronaldo, o Fenômeno, que foi o artilheiro do torneio. Essa vitória consolidou o Brasil como o maior campeão mundial, com 5 títulos conquistados.</p>
-        <img src="imagens/final-2002.jpg" alt="Ronaldo comemora seu gol na final da Copa do Mundo de 2002 contra a Alemanha">
-        <button aria-label="Assistir a um vídeo sobre a final" class="video-btn" onclick="window.location.href='https://www.youtube.com/watch?v=xyz'">Assistir à final</button>
+    <section id="final">
+      <h2>Final: Brasil vs. Alemanha</h2>
+      <p>A final entre Brasil e Alemanha foi um dos grandes confrontos da história das Copas. O Brasil venceu por 2 a 0, com os dois gols sendo marcados por Ronaldo, o Fenômeno, que foi o artilheiro do torneio. Essa vitória consolidou o Brasil como o maior campeão mundial, com 5 títulos conquistados.</p>
+      <figure>
+        <img src="img/ronaldo-final.jpg" alt="Ronaldo comemora seu gol na final da Copa do Mundo de 2002 contra a Alemanha">
+        <figcaption>Ronaldo comemora seu gol na final da Copa do Mundo de 2002 contra a Alemanha</figcaption>
+      </figure>
     </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Copa do Mundo 2002. Todos os direitos reservados.</p>
-    </footer>
-
-    <script>
-        function toggleMoreInfo(section) {
-            const moreInfo = document.getElementById(section + '-more');
-            const button = document.querySelector('.' + section + ' .read-more-btn');
-
-            if (moreInfo.style.display === "none") {
-                moreInfo.style.display = "block";
-                button.textContent = "Leia menos";
-            } else {
-                moreInfo.style.display = "none";
-                button.textContent = "Leia mais";
-            }
-        }
-    </script>
+  <footer>
+    <p>&copy; 2025 Copa do Mundo 2002. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
