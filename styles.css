@@ -100,4 +100,36 @@
     width: 100%;
     bottom: 0;
   }
+   
+  #galeria {
+    margin: 2rem 0;
+  }
+  
+  #galeria h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .galeria-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  .galeria-container figure {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .galeria-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .galeria-container figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
   
